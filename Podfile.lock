@@ -1,0 +1,21 @@
+PODS:
+  - KinsaGradientSlider (1.0.0)
+
+DEPENDENCIES:
+  - KinsaGradientSlider (from `https://github.com/kinsahealth/ios-GradientSlider.git`)
+
+EXTERNAL SOURCES:
+  KinsaGradientSlider:
+    :git: https://github.com/kinsahealth/ios-GradientSlider.git
+
+CHECKOUT OPTIONS:
+  KinsaGradientSlider:
+    :commit: 58a5b44da62feef1840d901b0970523b2529b7bf
+    :git: https://github.com/kinsahealth/ios-GradientSlider.git
+
+SPEC CHECKSUMS:
+  KinsaGradientSlider: f887739b499232564c01e11fc989921b9f2ffeec
+
+PODFILE CHECKSUM: 3d08a9b6723a4878512431b68d2455c13718a26b
+
+COCOAPODS: 1.8.4
