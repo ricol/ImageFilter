@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Filter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-wR-mST">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5N-Nz-9s6">
+                                <rect key="frame" x="0.0" y="854" width="1366" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiS-vO-dRy" customClass="UIVisualEffectView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1366" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mzn-Cq-uzu">
+                                        <rect key="frame" x="5" y="5" width="150" height="140"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTA-DP-6Et">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="33.5"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnResetOnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a31-Wx-gzN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejL-ex-oVt">
+                                                <rect key="frame" x="0.0" y="35.5" width="150" height="33.5"/>
+                                                <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                                <state key="normal" title="Preview">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUY-vu-Xaz">
+                                                <rect key="frame" x="0.0" y="71" width="150" height="33.5"/>
+                                                <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                                <state key="normal" title="Undo">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwW-Ay-cNh">
+                                                <rect key="frame" x="0.0" y="106.5" width="150" height="33.5"/>
+                                                <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                                <state key="normal" title="Redo">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="wQJ-g4-emZ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RrV-ds-iwA">
+                                        <rect key="frame" x="341.5" y="15" width="683" height="120"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3KE-cn-srQ" customClass="GradientSlider" customModule="KinsaGradientSlider">
+                                                <rect key="frame" x="-2" y="-4" width="687" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="thickness">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasRainbow" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                                                        <color key="value" red="0.99739629029999999" green="0.006553315558" blue="0.0115556987" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                                                        <color key="value" red="0.99348205329999995" green="0.0066673308610000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zRx-Li-6hO"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ob8-e0-j45" customClass="GradientSlider" customModule="KinsaGradientSlider">
+                                                <rect key="frame" x="-2" y="36" width="687" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="thickness">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ES-BV-0SC"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRH-4f-t7z" customClass="GradientSlider" customModule="KinsaGradientSlider">
+                                                <rect key="frame" x="-2" y="76" width="687" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                        <real key="value" value="-1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="thickness">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="FXk-u4-T1d"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="SUK-l8-YwI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-DN-VuP">
+                                        <rect key="frame" x="1034.5" y="15" width="100" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Hue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvh-Qz-wVl">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                                <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Saturation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGu-Ko-FeA">
+                                                <rect key="frame" x="0.0" y="40" width="100" height="40"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                                <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Brightness" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnQ-Sd-0vl">
+                                                <rect key="frame" x="0.0" y="80" width="100" height="40"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                                <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="7Z0-0m-zsP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eiS-vO-dRy" secondAttribute="trailing" id="1NP-A6-LXR"/>
+                                    <constraint firstAttribute="height" constant="150" id="81R-Aq-Zyk"/>
+                                    <constraint firstAttribute="bottom" secondItem="RrV-ds-iwA" secondAttribute="bottom" constant="15" id="Bgn-28-7xq"/>
+                                    <constraint firstAttribute="bottom" secondItem="mzn-Cq-uzu" secondAttribute="bottom" constant="5" id="Ds8-Iu-Phk"/>
+                                    <constraint firstItem="mzn-Cq-uzu" firstAttribute="top" secondItem="d5N-Nz-9s6" secondAttribute="top" constant="5" id="EH7-81-tFj"/>
+                                    <constraint firstItem="RrV-ds-iwA" firstAttribute="top" secondItem="d5N-Nz-9s6" secondAttribute="top" constant="15" id="EJk-zl-h07"/>
+                                    <constraint firstItem="RrV-ds-iwA" firstAttribute="centerX" secondItem="d5N-Nz-9s6" secondAttribute="centerX" id="Stm-3i-KOY"/>
+                                    <constraint firstItem="eiS-vO-dRy" firstAttribute="leading" secondItem="d5N-Nz-9s6" secondAttribute="leading" id="X7a-zE-yEB"/>
+                                    <constraint firstItem="mzn-Cq-uzu" firstAttribute="leading" secondItem="d5N-Nz-9s6" secondAttribute="leading" constant="5" id="ZNO-de-5cn"/>
+                                    <constraint firstItem="fBd-DN-VuP" firstAttribute="leading" secondItem="RrV-ds-iwA" secondAttribute="trailing" constant="10" id="ZSp-tm-vg0"/>
+                                    <constraint firstItem="fBd-DN-VuP" firstAttribute="top" secondItem="d5N-Nz-9s6" secondAttribute="top" constant="15" id="cot-vf-gJt"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fBd-DN-VuP" secondAttribute="trailing" constant="5" id="dWh-3G-oC6"/>
+                                    <constraint firstItem="RrV-ds-iwA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mzn-Cq-uzu" secondAttribute="trailing" constant="10" id="fbj-fL-kCe"/>
+                                    <constraint firstAttribute="bottom" secondItem="fBd-DN-VuP" secondAttribute="bottom" constant="15" id="i3k-CN-VRM"/>
+                                    <constraint firstAttribute="bottom" secondItem="eiS-vO-dRy" secondAttribute="bottom" id="x0P-as-qED"/>
+                                    <constraint firstItem="RrV-ds-iwA" firstAttribute="width" secondItem="d5N-Nz-9s6" secondAttribute="width" multiplier="0.5" id="xdD-XV-tNi"/>
+                                    <constraint firstItem="eiS-vO-dRy" firstAttribute="top" secondItem="d5N-Nz-9s6" secondAttribute="top" id="yz8-Oe-bUO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1686290801" green="0.17260169980000001" blue="0.16862708330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1eS-wR-mST" secondAttribute="bottom" id="8xj-Bj-vfB"/>
+                            <constraint firstItem="d5N-Nz-9s6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FnX-ha-b5z"/>
+                            <constraint firstItem="1eS-wR-mST" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qbn-Rj-8D6"/>
+                            <constraint firstItem="1eS-wR-mST" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rt9-2v-S0d"/>
+                            <constraint firstItem="d5N-Nz-9s6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UYA-nS-6dD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eS-wR-mST" secondAttribute="trailing" id="mxl-HV-MWr"/>
+                            <constraint firstItem="d5N-Nz-9s6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xUb-nQ-0i0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnPreview" destination="ejL-ex-oVt" id="9gQ-zk-Wex"/>
+                        <outlet property="btnRedo" destination="WwW-Ay-cNh" id="yfm-a4-1lA"/>
+                        <outlet property="btnReset" destination="CTA-DP-6Et" id="aa7-Pb-9jf"/>
+                        <outlet property="btnUndo" destination="iUY-vu-Xaz" id="3XI-gm-FMD"/>
+                        <outlet property="imageView" destination="1eS-wR-mST" id="WFO-JG-apn"/>
+                        <outlet property="lblBrightness" destination="gnQ-Sd-0vl" id="vyD-IT-9Zm"/>
+                        <outlet property="lblHue" destination="Jvh-Qz-wVl" id="6y6-XH-lkd"/>
+                        <outlet property="lblSaturation" destination="YGu-Ko-FeA" id="6Ue-cc-6fc"/>
+                        <outlet property="sliderBrightness" destination="dRH-4f-t7z" id="ATw-zq-Qym"/>
+                        <outlet property="sliderHue" destination="3KE-cn-srQ" id="7JW-dd-Ez2"/>
+                        <outlet property="sliderSaturation" destination="ob8-e0-j45" id="FCs-5S-zNr"/>
+                        <outlet property="viewEffect" destination="eiS-vO-dRy" id="U7O-wb-Uzl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="32"/>
+        </scene>
+    </scenes>
+</document>
